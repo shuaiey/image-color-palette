@@ -32,21 +32,4 @@ function _getImageData(image) {
   return context.getImageData(0, 0, width, height);
 }
 
-function _checkImgData(imgData) {
-  if (!imgData) {
-    try {
-      imgData = getImageData(imgRef.current);
-    } catch {
-      window.alert("Please upload an image.");
-    }
-  }
-  return imgData;
-}
-
-export {
-  _convertPixelsToRGB,
-  _rgbArray2String,
-  _rgbObj2String,
-  _getImageData,
-  _checkImgData
-};
+export { _convertPixelsToRGB, _rgbArray2String, _rgbObj2String, _getImageData };

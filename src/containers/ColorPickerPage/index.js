@@ -14,8 +14,7 @@ import PickerUniform from "../../components/PickerUniform";
 import {
   _getImageData,
   _rgbArray2String,
-  _rgbObj2String,
-  _checkImgData
+  _rgbObj2String
 } from "../../utils/imageUtils";
 
 const CenterDiv = styled.div`
@@ -41,7 +40,16 @@ const FlexBox = styled.div`
 
 function ColorPickerPage() {
   const imgRef = useRef(null);
-  // const [imgData, setImgData] = useState(null);
+  function _checkImgData(imgData) {
+    if (!imgData) {
+      try {
+        imgData = _getImageData(imgRef.current);
+      } catch {
+        window.alert("Please upload an image.");
+      }
+    }
+    return imgData;
+  }
   const [UQ, setUQ] = useState({ mc: [], palette: [], info: {} });
   const [KMeans, setKMeans] = useState({ mc: [], palette: [], info: {} });
   const [MKMeans, setMKMeans] = useState({ mc: [], palette: [], info: {} });

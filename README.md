@@ -1,4 +1,4 @@
-# Color Picker
+# Image Color Palatte
 
 ## Introduction
 
