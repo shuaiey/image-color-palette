@@ -1,6 +1,6 @@
 # Image Color Palette
 
-⇢ A [demo](https://liebeg.github.io/) app is here.
+⇢ A [demo](https://liebeg.github.io/image-color-palette) app is here.
 
 ## Introduction
 
