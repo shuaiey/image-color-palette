@@ -1,7 +1,5 @@
 # Color Picker
 
-[toc]
-
 ## Introduction
 
 This project originates from my passion to color, and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

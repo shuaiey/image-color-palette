@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.nav {
+  background-color: #fff;
+  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); */
+  box-sizing: border-box;
+  height: 3.75rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.nav-inner {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-logo {
+  align-items: center;
+  color: #1f2227;
+  color: var(--ifm-navbar-link-color);
+  display: flex;
+  font-weight: 700;
+  height: 2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.nav-logo img {
+  height: 100%;
+  margin-right: 0.5rem;
+}
+.nav-items {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+}
+.nav-items.nav-items-right {
+  justify-content: flex-end;
+}
+.nav-link {
+  color: #1f2227;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+}
+
+.nav .nav-item {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+}
+
+a {
+  color: black;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+img.medium {
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.color-picker {
+  display: flex;
+  margin: 20px 0;
+}
+
+.input-img-upload {
+  display: none;
+}
+.btn-upload {
+  margin: 0;
+}
+
+.tag {
+  line-height: 1.8rem;
+  color: #7a7a8c;
+}
+.title-area {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.article-content-meta {
+  display: grid;
+  grid-template-areas: "author created updated";
+}
+
+/* 
+canvas {
+  width: 100%;
+  height: 360px;
+  background-color: #f0f0f0;
+}
+
+.showcase {
+  width: 100%;
+  max-width: 1024px;
+  height: 460px;
+  background-color: transparent;
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
