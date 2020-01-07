@@ -1,10 +1,12 @@
-# Image Color Palatte
+# Image Color Palette
+
+⇢ A [demo](https://liebeg.github.io/) app is here.
 
 ## Introduction
 
 This project originates from my passion to color, and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In this project, I collected some basic or popular approaches to generate color palatte from an image, they are:
+In this project, I collected some basic or popular approaches to generate color palette from an image, they are:
 
 - Uniform/One-pass Quantization by me,
 - K Means Cluster by [woshizja](https://github.com/woshizja/colorful-color), and small modified version by me,
@@ -18,6 +20,14 @@ To run locally:
 
 - with yarn, run `yarn`, then `yarn start` in console
 - with npm, run `npm i`, then `npm start` in console
+
+## Example
+
+To a same image, different methods may produce very different results. And also, the same method has different implementations, which depends on how the developer quantize the image data. Later I'll write an article on "About" page of the demo. For a quick grasp, the following image may explain something.
+
+![Results of a BW image and a green-tone image](https://github.com/LiebeG/image-color-palette/raw/master/public/group.jpg)
+
+It's hard to say which method is better for the first BW image, but for the second green-tone frog image, **Modified Median Cut** method and **Octree** method produce some very different color from the image. The reason for this case is because, first, they caculate colors not count; second, for optimization, they omit many image data (eg., some bit operation) (Media Cut method by GoogleChromeLabs doesn't omit image data, therefore they don't produce the purple color).
 
 ## Reference
 
