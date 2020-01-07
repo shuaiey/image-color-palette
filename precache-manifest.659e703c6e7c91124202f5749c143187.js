@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac63572492e7b95cf7cdef6b6dc57a92",
+    "revision": "43dfc286293e83dd6df2e3926a7d544c",
     "url": "/image-color-palette/index.html"
   },
   {
-    "revision": "0e611055e81c84a6e36a",
+    "revision": "3993960172d4991c6a35",
     "url": "/image-color-palette/static/css/main.c14bfedc.chunk.css"
   },
   {
-    "revision": "d4f2212297b81d401286",
-    "url": "/image-color-palette/static/js/2.bae0df90.chunk.js"
+    "revision": "7d6ca308125f072b85a4",
+    "url": "/image-color-palette/static/js/2.86639aca.chunk.js"
   },
   {
-    "revision": "0e611055e81c84a6e36a",
-    "url": "/image-color-palette/static/js/main.e114ef91.chunk.js"
+    "revision": "3993960172d4991c6a35",
+    "url": "/image-color-palette/static/js/main.15c84bbc.chunk.js"
   },
   {
     "revision": "9a18d25530a42b03fa9f",
